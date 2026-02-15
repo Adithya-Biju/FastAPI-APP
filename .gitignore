@@ -1,0 +1,28 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.venv/
+venv/
+env/
+.env
+
+# Generated files
+*.log
+*.tmp
+*.swp
+*.egg-info/
+dist/
+build/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+note.txt
+main2.py
