@@ -1,13 +1,13 @@
 import jwt
 from jwt.exceptions import InvalidTokenError
 from datetime import datetime, timezone, timedelta
-from schema import TokenData
-from models import User
+from app.schema import TokenData
+from app.models import User
 from typing import Annotated
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from database import SessionDep
-from config import settings 
+from app.database import SessionDep
+from app.config import settings 
 
 SECRET_KEY = settings.jwt_secret
 ALGORITHM = settings.algorithm

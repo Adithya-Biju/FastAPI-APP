@@ -1,10 +1,10 @@
 from fastapi import status, HTTPException, APIRouter, Depends
 from typing import Annotated
-from models import User
-from schema import UserCreate, UserOut
-from database import SessionDep
-from utils import get_password_hash
-from oauth2 import get_current_user
+from app.models import User
+from app.schema import UserCreate, UserOut
+from app.database import SessionDep
+from app.utils import get_password_hash
+from app.oauth2 import get_current_user
 
 router = APIRouter(
     prefix="/users",

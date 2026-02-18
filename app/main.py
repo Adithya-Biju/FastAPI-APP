@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-import config
-from database import lifespan
-from routers import (
+from app import config
+from app.database import lifespan
+from app.routers import (
     post_route,
     user_route,
     auth_route,
